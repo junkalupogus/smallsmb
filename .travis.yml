@@ -1,0 +1,18 @@
+language: c
+sudo: true
+
+before_install:
+- sudo apt-get update
+- sudo apt-get -y install wget
+- sudo apt-get -y install unzip
+
+env:
+- FLAGS=X86
+- FLAGS=arm
+- FLAGS=mips
+- FLAGS=arm_64
+- FLAGS=tegra
+
+
+script:
+- make configure
